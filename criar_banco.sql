@@ -1,0 +1,2 @@
+Create database agehab_inscricao
+GO
