@@ -10,6 +10,4 @@ COPY banco.sql ./
 COPY entrypoint.sh ./
 COPY setup-database.sh ./
 
-# Grant permissions for the setup-database and entrypoint shell scripts to be executable
-
 CMD /bin/bash ./entrypoint.sh
