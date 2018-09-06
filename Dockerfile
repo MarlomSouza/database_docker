@@ -6,6 +6,7 @@ ENV MSSQL_PID=Developer
 EXPOSE 1433
 WORKDIR /src
 
+COPY banco.sql ./
 COPY entrypoint.sh ./
 COPY setup-database.sh ./
 
