@@ -1,2 +1,2 @@
-create database agehab_inscricao
+ALTER LOGIN [sa] WITH CHECK_POLICY = OFF, PASSWORD = 'sa' OLD_PASSWORD = 'Sa.123456';
 GO
