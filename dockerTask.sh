@@ -40,6 +40,14 @@ runContainer () {
     fi
 }
 
+#restart compose
+restartCompose(){
+  echo "Derrubando"
+  docker-compose down
+  echo "Subindo"
+  docker-compose up
+}
+
 # Shows the usage for the script.
 showUsage () {
   echo "Usage: dockerTask.sh [COMMAND]"
@@ -65,6 +73,9 @@ else
     "cls")
             killContainers
             ;;
+    "compose")
+            restartCompose
+            ;;
     "build")
             killContainers
             buildImage
@@ -75,4 +86,3 @@ else
             ;;
   esac
 fi
-read
